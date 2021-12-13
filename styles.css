@@ -1,0 +1,108 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+:root
+{
+    --soft_blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    
+    --very_dark_blue_mainBG: hsl(217, 54%, 11%);
+    --very_dark_blue_cardBG: hsl(216, 50%, 16%);
+    --very_dark_blue_line: hsl(215, 32%, 27%);
+}
+
+
+body
+{
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    background-color: var(--very_dark_blue_mainBG);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.container__card
+{
+    width: 300px;
+    height: 500px;
+    background-color: var(--very_dark_blue_cardBG);
+    margin-top: 100px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1.2fr 0.8fr;
+}
+
+.container__card__img
+{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container__card__text
+{
+    height: 100;
+    color: var(--soft_blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__card__text h2 
+{
+    color: white;
+}
+.container__card__text h2:hover
+{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card__item
+{
+    display: flex;
+    justify-content: space-between
+}
+
+.eth
+{
+    color: var(--cyan);
+}
+
+.date
+{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.date__icon
+{
+    margin: 3px;
+}
+
+.user
+{
+    padding-top: 10px;
+    border-top: 1px solid var(--very_dark_blue_line);
+}
+
+.user span
+{
+    color: white;
+}
+
+.user span:hover
+{
+    color: var(--cyan);
+    cursor: pointer;
+}
