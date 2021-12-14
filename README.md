@@ -1,2 +1,2 @@
 # website-challenge
- website challenge page -> Fontend Mentor
+ website challenge -> Frontend Mentor
